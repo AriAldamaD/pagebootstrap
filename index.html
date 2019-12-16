@@ -15,6 +15,11 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/button-ghost.css">
     <script src="js/index.js"></script>
+    <script src="js/smooth-scroll.polyfills.min.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+
     <title>Comienzo</title>
 </head>
 <body>
@@ -35,19 +40,23 @@
                 <li class="nav-item active">
                   <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" data-scrooll href="#portafolio">Portafolio</a>
+                  </li>
                 
                 <li class="nav-item">
-                  <a class="nav-link"href="#">About us</a>
+                  <a class="nav-link" data-scrooll href="#aboutus">About us</a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
+                  <a class="nav-link" data-scrooll href="#pricing">Pricing</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Testimonials</a>
+                    <a class="nav-link" data-scroll href="#testimonials">Testimonials</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" data-scroll href="#contact">Contact</a>
                 </li>
                 
               </ul>
@@ -406,6 +415,27 @@
        </div>
      </div>
    </section>
+
+  <section id="footer" class="bg-dark">
+    <div class="container">
+      <img src="css/img/mundo.png" alt="logo" class="logo-brand" alt="logo">
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Home</a></li>
+        <li class="list-inline-item"><a href="#">Portafolio</a></li>
+        <li class="list-inline-item"><a href="#">About us</a></li>
+        <li class="list-inline-item"><a href="#">Pricing</a></li>
+        <li class="list-inline-item"><a href="#">Contact</a></li>
+      </ul>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#"><i class="icon ion-logo-instagram"></i></a></li>
+        <li class="list-inline-item"><a href="#"><i class="icon ion-logo-twitter"></i></a></li>
+        <li class="list-inline-item"><a href="#"><i class="icon ion-logo-youtube"></i></a></li>
+        <li class="list-inline-item"><a href="#"><i class="icon ion-logo-dribbble"></i></a></li>
+        <li class="list-inline-item"><a href="#"><i class="icon ion-logo-facebook"></i></a></li>
+      </ul>
+      <small>all rights reserved 2019</small>
+    </div>
+  </section>
 
 </body>
 </html>
